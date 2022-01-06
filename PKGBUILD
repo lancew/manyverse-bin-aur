@@ -50,7 +50,8 @@ package() {
   mkdir -p "${pkgdir}/usr/bin/manyverse"
   cp -r "${srcdir}/$pkgname-${pkgver//_/-}" "${pkgdir}/usr/bin"
   mv "${pkgdir}/usr/bin/$pkgname-${pkgver//_/-}" "${pkgdir}/usr/bin/manyverse_bin"
-  # chmod +x "${pkgdir}/usr/bin/manyverse"
   rm -rf "${pkgdir}/usr/bin/manyverse"
-  #ln -s "${pkgdir}/usr/bin/manyverse_bin/manyverse" "${pkgdir}/usr/bin/manyverse"
+  echo '/usr/bin/manyverse_bin/manyverse' > "${srcdir}/manyverse.sh"
+  cp "${srcdir}/manyverse.sh" "${pkgdir}/usr/bin/manyverse"
+  chmod +x "${pkgdir}/usr/bin/manyverse"
 }
