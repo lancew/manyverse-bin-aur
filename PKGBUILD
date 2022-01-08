@@ -39,10 +39,11 @@ Type=Application
 Name=manyverse
 Comment=A social network without the bad stuff, built on the peer-to-peer SSB protocol
 Path=/usr/bin
-Exec=manyverse
+Exec=manyverse %U
 Icon=manyverse
 Terminal=false
 Categories=Internet
+MimeType=x-scheme-handler/ssb;
 " > "${srcdir}/manyverse.desktop"
 
   cp "${srcdir}/manyverse.desktop" "${pkgdir}/usr/share/applications/"
