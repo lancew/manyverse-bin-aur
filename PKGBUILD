@@ -1,6 +1,6 @@
 # Maintainer: Lance WIcks <lw@judocoach.com>
 pkgname=manyverse
-pkgver=0.2201.7_beta
+pkgver=0.2201.14_beta.b
 pkgrel=1
 epoch=
 pkgdesc="A social network without the bad stuff, built on the peer-to-peer SSB protocol."
