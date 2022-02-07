@@ -1,6 +1,7 @@
 # Maintainer: Lance Wicks <lw@judocoach.com>
+# install with makepkg -sfi
 pkgname=manyverse
-pkgver=0.2202.4_beta
+pkgver=0.2202.7_beta
 pkgrel=1
 epoch=
 pkgdesc="A social network without the bad stuff, built on the peer-to-peer SSB protocol."
